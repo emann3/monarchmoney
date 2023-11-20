@@ -305,11 +305,6 @@ class MonarchMoney(object):
         category_ids: List[str] = [],
         account_ids: List[str] = [],
         tag_ids: List[str] = [],
-        has_attachments: bool = False,
-        has_notes: bool = False,
-        hidden_from_reports: bool = False,
-        is_split: bool = False,
-        is_recurring: bool = False,
     ) -> Dict[str, Any]:
         """
         Gets transaction data from the account.
@@ -401,11 +396,6 @@ class MonarchMoney(object):
                 "categories": category_ids,
                 "accounts": account_ids,
                 "tags": tag_ids,
-                "hasAttachments": has_attachments,
-                "hasNotes": has_notes,
-                "hideFromReports": hidden_from_reports,
-                "isRecurring": is_recurring,
-                "isSplit": is_split,
             },
         }
 
